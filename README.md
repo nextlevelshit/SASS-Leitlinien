@@ -2,15 +2,13 @@
 
 Warum immer so viel Gelaber, wenn es auch einfach geht. Hier bekommt ihr eine ordentliche Vorlage für eure SCSS-Dateien. Solltest du dich mit den verschiedenen CSS-Spezifitäten nicht so gut auskennen, kannst du es gerne hier nachlesen:
 
-
-
 * [CSS Guide Lines by Harry Roberts](http://cssguidelin.es/)
 * [CSS Specifity by Smashing Magazine](http://www.smashingmagazine.com/2007/07/27/css-specificity-things-you-should-know/)
 
 
 ## main.scss
 
-```css
+```scss
 /*----------------------------------------------------------------
 * Settings
 *----------------------------------------------------------------
@@ -89,7 +87,27 @@ body {
 
 ```
 
-## SCSS Compiler
-### gulp
+# SCSS zu CSS kompilieren
+## gulp
+[gulp-sass Plugin](https://www.npmjs.com/package/gulp-sass) ```https://www.npmjs.com/package/gulp-sass```
 
-### grunt
+### 1. Installieren
+```npm install gulp-sass```
+
+### 2. Gulp Plugin hinzufügen
+
+Siehe zu, dass du die Dateien im richtigen Pfad hinterlegt hast. Alles Dateien, die mit einem Unterstrich ```_``` beginnen, werden außer Acht gelassen. Das ist gut für die Leistungsfähigkeit des Kompilierens und erlaubt ein zügiges Arbeiten. Achte nur darauf, dass du auch alle nötigen Dateien in deiner ```main.scss``` importierst.
+
+```js
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+ 
+gulp.task('sass', function () {
+    gulp.src('./scss/*.scss')
+        .pipe(sass())
+        .pipe(gulp.dest('./css'));
+});
+```
+
+## grunt
+[grunt-contrib-sass Plugin](https://github.com/gruntjs/grunt-contrib-sass)```https://github.com/gruntjs/grunt-contrib-sass```
