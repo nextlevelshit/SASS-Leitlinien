@@ -1,4 +1,4 @@
-# SCSS-Leitlinien
+# SASS-Leitlinien
 
 Warum immer so viel Gelaber, wenn es auch einfach geht. Hier bekommt ihr eine ordentliche Vorlage für eure SCSS-Dateien. Solltest du dich mit den verschiedenen CSS-Spezifitäten nicht so gut auskennen, kannst du es gerne hier nachlesen:
 
