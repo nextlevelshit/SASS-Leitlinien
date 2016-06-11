@@ -96,7 +96,7 @@ body {
 
 ### 2. Gulp Plugin hinzufügen
 
-Siehe zu, dass du die Dateien im richtigen Pfad hinterlegt hast. Alles Dateien, die mit einem Unterstrich ```_``` beginnen, werden außer Acht gelassen. Das ist gut für die Leistungsfähigkeit des Kompilierens und erlaubt ein zügiges Arbeiten. Achte nur darauf, dass du auch alle nötigen Dateien in deiner ```main.scss``` importierst.
+Siehe zu, dass du die Dateien im richtigen Pfad hinterlegt hast. Alle Dateien, die mit einem Unterstrich ```_``` beginnen, werden außer Acht gelassen. Das ist gut für die Leistungsfähigkeit des Kompilierens und erlaubt ein zügiges Arbeiten. Achte nur darauf, dass du auch alle nötigen Dateien in deiner ```main.scss``` importierst.
 
 ```js
 var gulp = require('gulp');
